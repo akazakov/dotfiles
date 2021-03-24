@@ -26,6 +26,7 @@ set colorcolumn=80
 set modelines=10
 set modeline
 syntax enable
+set backspace=2 " make backspace work like most other programs
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -112,18 +113,16 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " Prevent opening a doc window when autocompleting
 set completeopt=menu
 
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
-"let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+let g:solarized_termcolors = 256
 "let g:solarized_termtrans = 1
 
 set background=light
-set backspace=2 " make backspace work like most other programs
-set termguicolors
+"set termguicolors
 colorscheme solarized
 
 set tags=tags
-
 
 " Settings for Vimwiki
 let g:vimwiki_list = [{'path':'~/scratchbox/vimwiki/markdown/','ext':'.md','syntax':'markdown'}, {"path":"~/scratchbox/vimwiki/wiki/"}]
